@@ -11,10 +11,10 @@ import java.util.ArrayList;
 
 import androidx.recyclerview.widget.RecyclerView;
 import koo.loomis.com.baselibrary.R;
-import koo.loomis.com.baselibrary.adapter.BaseViewHolder;
-import koo.loomis.com.baselibrary.adapter.QuickDelegateAdapter;
-import koo.loomis.com.baselibrary.myinterface.ITabPagerView;
-import koo.loomis.com.baselibrary.view.BaseListView;
+import com.loomis.koo.library.adapter.BaseViewHolder;
+import com.loomis.koo.library.adapter.QuickDelegateAdapter;
+import com.loomis.koo.library.myinterface.ITabPagerView;
+import com.loomis.koo.library.view.BaseListView;
 
 /**
  * @ProjectName: BaseLibrary

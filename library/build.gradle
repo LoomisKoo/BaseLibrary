@@ -1,0 +1,91 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+}
+
+repositories {
+    maven { url "http://maven.aliyun.com/nexus/content/repositories/releases" }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha3'
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha4'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
+    //阿里巴巴扩展列表 vlayotu   因1.2.8版本不调用onbindViewHolder() 所以暂时使用1.2.6
+    api 'com.alibaba.android:vlayout:1.2.6'
+    //页面滑动退出框架
+    implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
+    //Lifecycles, LiveData, and ViewModel
+    api 'androidx.lifecycle:lifecycle-runtime:2.1.0-alpha04'
+    api 'androidx.lifecycle:lifecycle-extensions:2.1.0-alpha04'
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.1.0-alpha04"
+    //okhttp3
+    api 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    api 'com.squareup.okhttp3:okhttp:3.10.0'
+    //butterknife
+    api 'com.jakewharton:butterknife:10.0.0'
+    api 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    api 'com.alibaba:fastjson:1.2.51'
+    //加载动画
+    api 'com.zyao89:zloading:1.2.0'
+
+    //各种方法类集合，具体方法在说明文档 {@link /app/document/commonUtils.txt}
+    api 'com.blankj:utilcode:1.13.5'
+    //阿里Arouter
+    api 'com.alibaba:arouter-api:1.4.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+    //SmartRefreshLayout
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+    //侧滑recyclerview
+    api 'com.github.LoomisKoo:SwipeRecyclerview:1.0.1'
+    //图片框架  glide
+    api 'com.github.bumptech.glide:glide:4.8.0'
+    api 'jp.wasabeef:glide-transformations:4.0.0'
+    //RecycleView动画库
+    api 'jp.wasabeef:recyclerview-animators:2.2.3'
+    implementation 'com.google.android.material:material:1.1.0-alpha05'
+
+}

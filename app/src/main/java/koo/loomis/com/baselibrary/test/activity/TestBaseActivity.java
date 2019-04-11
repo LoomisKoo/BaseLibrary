@@ -7,8 +7,8 @@ import android.view.View;
 import com.alibaba.android.arouter.facade.annotation.Route;
 
 import koo.loomis.com.baselibrary.R;
-import koo.loomis.com.baselibrary.activity.BaseActivity;
-import koo.loomis.com.baselibrary.mvp.IBasePresenter;
+import com.loomis.koo.library.activity.BaseActivity;
+import com.loomis.koo.library.mvp.IBasePresenter;
 import koo.loomis.com.baselibrary.test.util.ARouteUtil;
 
 /**

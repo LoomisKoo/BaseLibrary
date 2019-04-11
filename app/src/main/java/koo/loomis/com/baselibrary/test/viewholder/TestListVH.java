@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import koo.loomis.com.baselibrary.R;
-import koo.loomis.com.baselibrary.adapter.BaseViewHolder;
+import com.loomis.koo.library.adapter.BaseViewHolder;
 
 /**
  * @ProjectName: BaseLibrary

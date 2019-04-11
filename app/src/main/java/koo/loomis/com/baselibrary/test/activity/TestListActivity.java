@@ -8,10 +8,10 @@ import com.alibaba.android.vlayout.layout.LinearLayoutHelper;
 
 import androidx.recyclerview.widget.RecyclerView;
 import koo.loomis.com.baselibrary.R;
-import koo.loomis.com.baselibrary.activity.BaseListActivity;
-import koo.loomis.com.baselibrary.adapter.BaseViewHolder;
-import koo.loomis.com.baselibrary.adapter.QuickDelegateAdapter;
-import koo.loomis.com.baselibrary.mvp.IBasePresenter;
+import com.loomis.koo.library.activity.BaseListActivity;
+import com.loomis.koo.library.adapter.BaseViewHolder;
+import com.loomis.koo.library.adapter.QuickDelegateAdapter;
+import com.loomis.koo.library.mvp.IBasePresenter;
 import koo.loomis.com.baselibrary.test.util.ARouteUtil;
 import koo.loomis.com.baselibrary.test.viewholder.TestListVH;
 
