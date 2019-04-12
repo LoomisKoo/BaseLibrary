@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'
 apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
 group="com.github.LoomisKoo"
 android {
     compileSdkVersion 28
@@ -34,6 +35,14 @@ android {
     }
 
 }
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
 
 repositories {
     maven { url "http://maven.aliyun.com/nexus/content/repositories/releases" }
