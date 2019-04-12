@@ -40,7 +40,6 @@ repositories {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 //    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
-//    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha4'
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     testImplementation 'junit:junit:4.12'
     implementation 'com.google.android.material:material:1.1.0-alpha05'

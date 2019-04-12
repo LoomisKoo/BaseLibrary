@@ -48,6 +48,11 @@ repositories {
     maven { url "http://maven.aliyun.com/nexus/content/repositories/releases" }
 }
 
+configurations {
+//这里要排除到这个包，这个包会与 com.google.guava 冲突，导致编译不过
+    all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -58,7 +63,7 @@ dependencies {
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha4'
+    compile 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
