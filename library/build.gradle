@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-group="com.github.LoomisKoo"
+group = "com.github.LoomisKoo"
 android {
     compileSdkVersion 28
 
@@ -70,8 +70,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
     //阿里巴巴扩展列表 vlayotu   因1.2.8版本不调用onbindViewHolder() 所以暂时使用1.2.6
     compile 'com.alibaba.android:vlayout:1.2.6'
-    //页面滑动退出框架
-    implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
     //Lifecycles, LiveData, and ViewModel
     implementation 'androidx.lifecycle:lifecycle-runtime:2.1.0-alpha04'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0-alpha04'
@@ -102,5 +100,6 @@ dependencies {
     //RecycleView动画库
     compile 'jp.wasabeef:recyclerview-animators:2.2.3'
     compile 'com.google.android.material:material:1.1.0-alpha05'
-
+    //滑动返回
+    api 'cn.bingoogolapple:bga-swipebacklayout:1.2.0@aar'
 }

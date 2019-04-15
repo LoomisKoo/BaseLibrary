@@ -67,5 +67,4 @@ public class TestListActivity extends BaseListActivity {
         return null;
     }
 
-
 }
