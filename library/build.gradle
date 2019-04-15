@@ -101,5 +101,5 @@ dependencies {
     compile 'jp.wasabeef:recyclerview-animators:2.2.3'
     compile 'com.google.android.material:material:1.1.0-alpha05'
     //滑动返回
-    api 'cn.bingoogolapple:bga-swipebacklayout:1.2.0@aar'
+    compile 'cn.bingoogolapple:bga-swipebacklayout:1.2.0@aar'
 }
